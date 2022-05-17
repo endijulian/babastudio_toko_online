@@ -6,10 +6,10 @@
             </li>
             <li class="menu-title">Module</li>
             <li class="{{ (request()->is('category*')) ? 'active' : '' }}">
-                <a href="{{ route('category.index') }}"> <i class="menu-icon fa fa-table"></i>Category</a>
+                <a href="{{ route('category') }}"> <i class="menu-icon fa fa-table"></i>Category</a>
             </li>
             <li class="{{ (request()->is('product*')) ? 'active' : '' }}">
-                <a href="{{ route('product.index') }}"> <i class="menu-icon fa fa-table"></i>Product</a>
+                <a href="{{ route('product') }}"> <i class="menu-icon fa fa-table"></i>Product</a>
             </li>
         </ul>
     </div><!-- /.navbar-collapse -->
