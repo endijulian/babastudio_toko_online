@@ -104,10 +104,14 @@
                                     <th scope="row">{{ $no++ }}</th>
                                     <td>{{ $item->name }}</td>
                                     <td>{{ $item->code }}</td>
-                                    <td>{{ $item->price }}</td>
+                                    <td>Rp. {{ $item->price }}</td>
                                     <td>{{ $item->quantity }}</td>
-                                    <td>{{ $item->category_id }}</td>
-                                    <td>{{ $item->image }}</td>
+                                    <td>
+                                        <span class="btn btn-primary btn-sm">{{ $item->category->category_name }}</span>
+                                    </td>
+                                    <td>
+                                        <img src="{{ asset('uploads/'.$item->image) }}" alt="" width="80" height="80">
+                                    </td>
                                     <td>Otto</td>
                                 </tr>
                             @endforeach

@@ -75,7 +75,7 @@
                                     <label for="category_id" class="control-label mb-1">Category<span class="badge">*</span></label>
                                         <select name="category_id" id="category_id" class="form-control" required>
                                             @foreach ($category as $value)
-                                                <option value="{{ $value->id }}">{{ $value->category_name }}</option>
+                                                <option value="{{$value->id}}">{{ $value->category_name }}</option>
                                             @endforeach
                                         </select>
                                     <p class="text-danger">{{ $errors->first('category_id') }}</p>
