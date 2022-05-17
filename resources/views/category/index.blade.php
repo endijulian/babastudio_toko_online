@@ -98,7 +98,9 @@
                                 <tr>
                                     <th scope="row">{{ $no++ }}</th>
                                     <td>{{ $item->category_name }}</td>
-                                    <td>Otto</td>
+                                    <td>
+                                        <a href="{{ route('category.edit',$item->id) }}" class="btn btn-sm btn-success">Edit</a>
+                                    </td>
                                 </tr>
                             @endforeach
                         @endif

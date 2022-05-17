@@ -112,7 +112,10 @@
                                     <td>
                                         <img src="{{ asset('uploads/'.$item->image) }}" alt="" width="80" height="80">
                                     </td>
-                                    <td>Otto</td>
+                                    <td>
+                                        <a href="{{ route('product.edit',$item->id) }}" class="btn btn-sm btn-success">Edit</a> 
+                                        <a href="{{ route('product.destroy',$item->id) }}" class="btn btn-sm btn-danger">Hapus</a>
+                                    </td>
                                 </tr>
                             @endforeach
                         @endif
